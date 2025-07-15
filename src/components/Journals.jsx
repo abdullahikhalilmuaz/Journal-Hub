@@ -4,7 +4,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaFilePdf, FaFileWord } from "react-icons/fa"; // Icons for PDF and DOCX
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts"; // Recharts for pie chart
-import { StateUniversities } from "../../../../college/server/StateUniversities";
 
 const API_BASE_URL = "http://localhost:5000/api/journals";
 
