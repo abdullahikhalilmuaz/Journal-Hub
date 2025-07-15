@@ -5,9 +5,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   server: {
     proxy: {
-      "/api": "http://localhost:5000", // Proxy all /api requests to the backend
+      "/api": "https://journal-hub-server.onrender.com", // Proxy all /api requests to the backend
     },
   },
   plugins: [react()],
 });
-

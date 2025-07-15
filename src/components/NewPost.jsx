@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/newpost.css";
 
-const URL = "http://localhost:5000/api/news";
+const URL = "https://journal-hub-server.onrender.com/api/news";
 
 export default function NewPost() {
   const [postContent, setPostContent] = useState("");

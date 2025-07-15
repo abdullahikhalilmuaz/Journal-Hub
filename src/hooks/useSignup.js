@@ -11,17 +11,20 @@ export const useSignup = () => {
     setError(null);
 
     try {
-      const res = await fetch("http://localhost:5000/api/user/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          firstname,
-          lastname,
-          username,
-          email,
-          password,
-        }),
-      });
+      const res = await fetch(
+        "https://journal-hub-server.onrender.com/api/user/signup",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            firstname,
+            lastname,
+            username,
+            email,
+            password,
+          }),
+        }
+      );
 
       const json = await res.json();
 

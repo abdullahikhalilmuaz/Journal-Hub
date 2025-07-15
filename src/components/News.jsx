@@ -5,7 +5,7 @@ import Comments from "./Comments";
 import NewPost from "./NewPost";
 import Loader from "./Loader";
 
-const URL = "http://localhost:5000/api/news";
+const URL = "https://journal-hub-server.onrender.com/api/news";
 
 export default function News() {
   const [data, setData] = useState(null);

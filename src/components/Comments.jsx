@@ -15,7 +15,7 @@ export default function Comments({ setShowComment, post, postIndex }) {
     const userDetail = JSON.parse(localStorage.getItem("user"));
     try {
       const response = await fetch(
-        `http://localhost:5000/api/news/${postIndex}/comment`, // Use postIndex instead of post._id
+        `https://journal-hub-server.onrender.com/api/news/${postIndex}/comment`, // Use postIndex instead of post._id
         {
           method: "POST",
           headers: {

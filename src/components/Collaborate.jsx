@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/collaborate.css";
 
-const API_BASE_URL = "http://localhost:5000/api/alluser/message";
+const API_BASE_URL =
+  "https://journal-hub-server.onrender.com/api/alluser/message";
 
 export default function Collaborate() {
   const [messages, setMessages] = useState([]);
@@ -68,7 +69,7 @@ export default function Collaborate() {
               <strong>{msg.username}</strong>: {msg.messageContent}
               {msg.file && (
                 <a
-                  href={`http://localhost:5000${msg.file}`}
+                  href={`https://journal-hub-server.onrender.com${msg.file}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -104,4 +105,3 @@ export default function Collaborate() {
     </div>
   );
 }
-

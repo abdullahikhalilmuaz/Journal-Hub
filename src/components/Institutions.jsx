@@ -199,12 +199,12 @@ const InstitutionProfile = () => {
   };
 
   const handleViewJournal = (fileUrl) => {
-    window.open(`http://localhost:5000${fileUrl}`, "_blank");
+    window.open(`https://journal-hub-server.onrender.com${fileUrl}`, "_blank");
   };
 
   // const handleDownloadJournal = (fileUrl, title) => {
   //   const link = document.createElement("a");
-  //   link.href = `http://localhost:5000${fileUrl}`;
+  //   link.href = `https://journal-hub-server.onrender.com${fileUrl}`;
   //   link.setAttribute(
   //     "download",
   //     title ? `${title.replace(/[^a-z0-9]/gi, "_")}.pdf` : "journal.pdf"

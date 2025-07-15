@@ -13,7 +13,9 @@ export default function Institute() {
   useEffect(() => {
     const fetchInstitutes = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/institutions");
+        const response = await fetch(
+          "https://journal-hub-server.onrender.com/api/institutions"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch institutes");
         }
@@ -80,7 +82,7 @@ export default function Institute() {
                 </p>
               </div>
               <div className="institute-card-footer">
-                 <button
+                <button
                   className="view-details-btn"
                   onClick={() => handleViewDetails(institute)}
                 >

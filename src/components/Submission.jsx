@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/submission.css";
 
-const API_BASE_URL = "http://localhost:5000/api/journals";
+const API_BASE_URL = "https://journal-hub-server.onrender.com/api/journals";
 
 export default function Submission() {
   const [formData, setFormData] = useState({

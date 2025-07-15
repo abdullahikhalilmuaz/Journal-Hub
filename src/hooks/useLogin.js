@@ -9,11 +9,14 @@ export const useLogin = () => {
     setIsLoading(true);
     setError(null);
 
-    const res = await fetch("http://localhost:5000/api/user/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    const res = await fetch(
+      "https://journal-hub-server.onrender.com/api/user/login",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      }
+    );
     const json = await res.json();
 
     if (!res.ok) {

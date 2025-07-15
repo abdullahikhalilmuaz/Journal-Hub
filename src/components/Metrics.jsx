@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
-const API_BASE_URL = "http://localhost:5000/api/journals";
+const API_BASE_URL = "https://journal-hub-server.onrender.com/api/journals";
 
 export default function Metrics() {
   const { id } = useParams();

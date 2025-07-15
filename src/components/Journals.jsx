@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { FaFilePdf, FaFileWord } from "react-icons/fa"; // Icons for PDF and DOCX
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts"; // Recharts for pie chart
 
-const API_BASE_URL = "http://localhost:5000/api/journals";
+const API_BASE_URL = "https://journal-hub-server.onrender.com/api/journals";
 
 export default function Journals() {
   const [search, setSearch] = useState("");
