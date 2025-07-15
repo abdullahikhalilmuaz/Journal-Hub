@@ -217,7 +217,7 @@ export default function Submission() {
 
         <button
           style={{
-            color: "orange",
+            // color: "orange",
             padding: "12px 20px",
             border: "none",
             borderRadius: "10px",

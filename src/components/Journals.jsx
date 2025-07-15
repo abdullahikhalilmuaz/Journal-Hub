@@ -213,14 +213,14 @@ export default function Journals() {
             value={selectedInstitution}
             onChange={(e) => setSelectedInstitution(e.target.value)}
           >
-            {StateUniversities.map((universities) => (
+            {/* {StateUniversities.map((universities) => (
               <>
                 <option value="">All Institutions</option>
                 <option value={`${universities.name}`}>
                   {universities.name}
                 </option>
               </>
-            ))}
+            ))} */}
           </select>
           <button className="filter-button" onClick={fetchJournals}>
             Refresh
