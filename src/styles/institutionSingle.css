@@ -1,0 +1,230 @@
+/* Single Institution Page Styles */
+.institution-single-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #c5630c;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.institution-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.institution-logo {
+  width: 120px;
+  height: 120px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.institution-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.institution-title h1 {
+  margin: 0;
+  color: #c5630c;
+  font-size: 2rem;
+}
+
+.institution-website a {
+  color: #666;
+  text-decoration: none;
+}
+
+.institution-website a:hover {
+  text-decoration: underline;
+}
+
+.institution-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.institution-tabs button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.institution-tabs button.active {
+  color: #c5630c;
+  border-bottom-color: #c5630c;
+  font-weight: bold;
+}
+
+.institution-tabs button:hover:not(.active) {
+  color: #c5630c;
+}
+
+.journals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.journal-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.journal-card h3 {
+  margin: 0 0 0.5rem;
+  color: #c5630c;
+}
+
+.journal-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.journal-meta .status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.journal-meta .status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.journal-meta .status.approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.journal-meta .status.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.journal-abstract {
+  color: #666;
+  margin: 1rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.view-button {
+  background: #c5630c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-button:hover {
+  background: #a9550a;
+}
+
+.no-journals {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.about-section,
+.contact-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2,
+.contact-section h2 {
+  color: #c5630c;
+  margin-top: 0;
+}
+
+.institution-details {
+  margin-top: 1.5rem;
+}
+
+.institution-details h3 {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.detail-label {
+  font-weight: bold;
+  width: 120px;
+  color: #666;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+}
+
+.contact-label {
+  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+  color: #666;
+}
+
+.institution-single-loading,
+.institution-single-error {
+  text-align: center;
+  padding: 2rem;
+}
+
+.institution-single-error button {
+  background: #c5630c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}

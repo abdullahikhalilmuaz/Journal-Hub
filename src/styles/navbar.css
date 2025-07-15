@@ -1,0 +1,60 @@
+.nav-bar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 14px;
+  box-sizing: border-box;
+  top: 110px;
+  left: 0;
+  bottom: 0;
+  width: 65px;
+  transition: width 0.6s ease-in-out;
+  z-index: 100; /* Ensure it's above content */
+  background-color: #c5630c;
+}
+
+
+.nav-bar div {
+  width: 100%;
+  height: 40px; /* Increased height for better UI */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-bar div:hover {
+  background-color: #e4975481;
+  margin-left: -3px;
+}
+
+/* Default icon styles */
+.nav-bar div svg {
+  fill: white;
+  stroke: white;
+  transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* When hovering over the div, change the SVG */
+.nav-bar div:hover svg {
+  fill: none; /* Remove fill */
+  stroke: white; /* Keep stroke white */
+}
+
+.nav-bar div span {
+  display: none; /* Hide text by default */
+  margin-left: 10px;
+  color: white;
+}
+
+.nav-bar:hover {
+  width: 200px;
+}
+
+.nav-bar:hover div span {
+  display: inline-block; /* Show text on hover */
+}

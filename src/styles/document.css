@@ -1,0 +1,66 @@
+.document-editor {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  color: rgb(29, 28, 28);
+}
+
+.save-button {
+  padding: 10px 20px;
+  background: #c5630c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #df7f2b;
+}
+
+.quill-editor {
+  background: white;
+  /* box-shadow: 0px 0px 4px rgba(0,0,0,.9); */
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+#toolbar {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#toolbar select,
+#toolbar button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+#toolbar select:hover,
+#toolbar button:hover {
+  background: #f0f0f0;
+}

@@ -1,0 +1,123 @@
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.comment-container .top,
+.bottom {
+  width: 100%;
+}
+
+.comment-container .top {
+  height: 66%;
+}
+.comment-container .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 34%;
+  overflow: auto;
+}
+
+.comment-container .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.comment-container .header span {
+  cursor: pointer;
+}
+.comment-container .header div {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 10px;
+  width: 100%;
+  height: 90px;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  margin: 10px auto;
+}
+.body p::first-letter {
+  font-size: 20px;
+  color: red;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 165px;
+  max-height: 200px;
+  background: linear-gradient(to right, #c5630c, yellow);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.comment-container .bottom .bottom-top {
+  width: 100%;
+  overflow: auto;
+  height: 100px;
+  max-height: 100px;
+  margin-top: 15px;
+  padding: 3px 20px;
+  min-height: 100px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.comment-container .bottom .bottom-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.bottom-bottom form {
+  display: flex;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
+  /* margin-top: -10px; */
+  align-items: center;
+}
+
+.bottom-bottom form input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0px 3px;
+  border-radius: 3px;
+  border: none;
+  background-color: #d1caca;
+  outline: none;
+}
+
+.bottom-bottom button {
+  padding: 10px 20px;
+  background-color: #c5630c;
+  color: white;
+}

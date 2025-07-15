@@ -1,0 +1,60 @@
+/* Styling the main header component */
+.main-header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.action-buttons a {
+  background-color: #c5630c;
+  margin: 0px 10px;
+  padding: 6px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.action-buttons a:first-of-type {
+  color: white;
+}
+.action-buttons a:last-of-type {
+  border: 1px solid #c5630c;
+  color: black;
+  background-color: #fff;
+}
+.action-buttons a:last-of-type:hover {
+  background-color: #c5630c;
+  color: white;
+  transform: scale(1.1);
+}
+.action-buttons a:first-of-type:hover {
+  transform: scale(1.1);
+  border: 1px solid #c5630c;
+  color: black;
+  background-color: #fff;
+}
